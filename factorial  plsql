@@ -1,0 +1,14 @@
+-- ) Write a PL/SQL program to display all even numbers up to a number using simple loop
+set SERVEROUTPUT on;
+DECLARE
+    n number;
+    fact number:=1;
+BEGIN
+    n:=&n;
+    for i in 1..n Loop
+        fact:=fact*i;
+        
+    end loop;
+    DBMS_OUTPUT.PUT_LINE('Factorila of ' || n || '=' || fact);
+END;
+/
