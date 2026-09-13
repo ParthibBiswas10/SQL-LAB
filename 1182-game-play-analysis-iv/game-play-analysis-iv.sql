@@ -8,7 +8,7 @@ WITH first_login as (
 
 select round(
 
-(select count(*)
+(select count(distinct a.player_id)
 from activity a
 join first_login f
 on 
